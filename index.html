@@ -2907,12 +2907,12 @@ Détection de plagiat
 							Quel petit malin
 						</aside>
 					</section>
-					<section data-background="src/zufrieden_a_super_cool_teacher_teaching_technological_watch_a8e5d7d1-e6f9-46a1-832e-b518699feddf.PNG" data-background-size="contain">
+					<!-- <section data-background="src/zufrieden_a_super_cool_teacher_teaching_technological_watch_a8e5d7d1-e6f9-46a1-832e-b518699feddf.PNG" data-background-size="contain">
 						<aside class="notes">
 							Et midjourney, comment il me dessine un super prof de technological watch<br/>
 							le soucis c'est le prompt ... du coup.
 						</aside>
-					</section>
+					</section> -->
 					<section data-background="src/veille_today_gpt3_x.png" data-background-size="contain">
 						<aside class="notes">
 							Dans la newsletter sentier, j'ai aussi lu ça :-) et je trouve très intéressant de bien être sûr de la définition d'intelligence<br/>
@@ -3067,7 +3067,7 @@ Détection de plagiat
 							Voir la version web et la version texte - article super intéressant sur l'AI
 						</aside>
 					</section>
-					<section data-background="src/veille_2023_cubox_ai_smile.png" data-background-size="contain">
+					<!-- <section data-background="src/veille_2023_cubox_ai_smile.png" data-background-size="contain">
 						<aside class="notes">
 							Un autre sur les sourire
 						</aside>
@@ -3076,7 +3076,7 @@ Détection de plagiat
 						<aside class="notes">
 							Un autre sur les sourire
 						</aside>
-					</section>
+					</section> -->
 					<section data-background="src/veille_2023_cubox.png" data-background-size="contain">
 						<aside class="notes">
 							Maintenance race
@@ -3223,13 +3223,65 @@ Détection de plagiat
 
 				<section>
 					<section>
-						<h1>SSG</h1>
+						<h1>Site statique</h1>
 					</section>
 					<section>
 						<h2>	
 							<span class="step-icon">🧪</span><br/>
 							Lab
 						</h2>
+					</section>
+					<section>
+						<table style="font-size:0.4em;margin-top:1em;">
+							<tr>
+								<td width="30%">
+									<h4>
+										Livrable attendu
+									</h4>
+								</td>
+								<td>
+									<h3>Blog traitant de votre domaine de veille</h3>
+									<p>4 articles (résumé des informations dénichées), 1 article (Explication du système d'écoute mis en place) et 1 article (expérimentation réalisée)</p>
+									<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies ainsi que l'explication du choix du SSG</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										90% – contenu
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le domaine est en relation avec votre Ikigai, ainsi que les taxonomies sont expliqués sur une page <strong>À propos</strong>.
+									</p>
+									<p>
+										✅ Les 6 articles sont en relation avec le domaine (dont 1 sur une expérimentation et 1 avec le système et la liste des sources d'écoute).
+									</p>
+									<p>
+										✅ Le contenu des articles cite la/les sources et explique en quoi ils sont intéressants pour vous et votre domaine et à quel moment cela vous sera utile.
+									</p>																				
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h4>
+										10% – technique, la forme
+									</h4>
+								</td>
+								<td>
+									<p>
+										✅ Le site est static (par exemple, généré avec le SSG de votre choix)
+									</p>
+									<p>
+										✅ Le thème est bien choisi (il correspond au domaine)
+									</p>
+									<p>
+										✅ Le site est hébergé sur github (et se génére via Github Actions)
+									</p>	
+								</td>
+							</tr>							
+						</table>
 					</section>
 					<section data-background="src/veille_static_0.png" data-background-size="contain">
 						<aside class="notes">
@@ -3543,62 +3595,62 @@ jobs:
 						</ol>
 						<aside class="notes">
 							Nous allons voir la théorie de l'épreuve du temps et l'experimentation/exploitation de la veille !<br/>
-							Finaliser installation et configuration de HUGO pour générer votre site web<br/>
+							Finaliser installation et configuration du SSG pour générer votre site web<br/>
 							Le déployer gratuitement sur Github pages<br/>
 							Et vous laisser du temps pour commencer/continuer la rédaction des articles
 						</aside>
 					</section>
 					<section>
 						<table style="font-size:0.4em;margin-top:1em;">
-							<tr>
-								<td width="30%">
-									<h4>
-										Livrable attendu
-									</h4>
-								</td>
-								<td>
-									<h3>Blog traitant de votre domaine de veille</h3>
-									<p>4 articles (résumé des informations dénichées), 1 article (Explication du système d'écoute mis en place) et 1 article (expérimentation réalisée)</p>
-									<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h4>
-										90% – contenu
-									</h4>
-								</td>
-								<td>
-									<p>
-										✅ Le domaine est en relation avec votre Ikigai, ainsi que les taxonomies sont expliqués sur une page <strong>À propos</strong>.
-									</p>
-									<p>
-										✅ Les 6 articles sont en relation avec le domaine (dont 1 sur une expérimentation et 1 avec le système et la liste des sources d'écoute).
-									</p>
-									<p>
-										✅ Le contenu des articles cite la/les sources et explique en quoi ils sont intéressants pour vous et votre domaine et à quel moment cela vous sera utile.
-									</p>																				
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h4>
-										10% – technique, la forme
-									</h4>
-								</td>
-								<td>
-									<p>
-										✅ Le site est généré avec Hugo
-									</p>
-									<p>
-										✅ Le thème est bien choisi (il correspond au domaine)
-									</p>
-									<p>
-										✅ Le site est hébergé sur github et se génére via Github Actions
-									</p>	
-								</td>
-							</tr>							
-						</table>
+						<tr>
+							<td width="30%">
+								<h4>
+									Livrable attendu
+								</h4>
+							</td>
+							<td>
+								<h3>Blog traitant de votre domaine de veille</h3>
+								<p>4 articles (résumé des informations dénichées), 1 article (Explication du système d'écoute mis en place) et 1 article (expérimentation réalisée)</p>
+								<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies ainsi que l'explication du choix du SSG</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									90% – contenu
+								</h4>
+							</td>
+							<td>
+								<p>
+									✅ Le domaine est en relation avec votre Ikigai, ainsi que les taxonomies sont expliqués sur une page <strong>À propos</strong>.
+								</p>
+								<p>
+									✅ Les 6 articles sont en relation avec le domaine (dont 1 sur une expérimentation et 1 avec le système et la liste des sources d'écoute).
+								</p>
+								<p>
+									✅ Le contenu des articles cite la/les sources et explique en quoi ils sont intéressants pour vous et votre domaine et à quel moment cela vous sera utile.
+								</p>																				
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h4>
+									10% – technique, la forme
+								</h4>
+							</td>
+							<td>
+								<p>
+									✅ Le site est généré avec le SSG de votre choix
+								</p>
+								<p>
+									✅ Le thème est bien choisi (il correspond au domaine)
+								</p>
+								<p>
+									✅ Le site est hébergé sur github et se génére via Github Actions
+								</p>	
+							</td>
+						</tr>							
+					</table>
 						<aside class="notes">
 							On aura l'occasion d'en reparler (je vous recommuniquerais ce tableau)<br/>
 							L'évaluation du cours me permet de voir si l'objectif est atteint. J'insiste sur : <br/>
@@ -3847,6 +3899,9 @@ document.body.appendChild(document.createElement('p'))
 						<img src="src/hype_semantic_2.jpg"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
 						<img src="src/hype_semantic_4.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
 						<img src="src/hype_blockchain_web3.jpg"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_ai_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_web3_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_db_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
 						</div>
 						<aside class="notes">
 							Intéressant de regarder l'évolution face aux prédictions<br/>
@@ -4140,7 +4195,7 @@ document.body.appendChild(document.createElement('p'))
 								<td>
 									<h3>Blog traitant de votre domaine de veille</h3>
 									<p>4 articles (résumé des informations dénichées), 1 article (Explication du système d'écoute mis en place) et 1 article (expérimentation réalisée)</p>
-									<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies</p>
+									<p>Une page "À propos" qui explique votre domaine, ce qui vous lie à ce domaine (Ikigai) et les taxonomies ainsi que l'explication du choix du SSG</p>
 								</td>
 							</tr>
 							<tr>
@@ -4169,7 +4224,7 @@ document.body.appendChild(document.createElement('p'))
 								</td>
 								<td>
 									<p>
-										✅ Le site est généré avec Hugo
+										✅ Le site est généré avec le SSG de votre choix
 									</p>
 									<p>
 										✅ Le thème est bien choisi (il correspond au domaine)
@@ -4959,7 +5014,7 @@ document.body.appendChild(document.createElement('p'))
 					<section>
 						<section>
 							<h2>🚧</h2>
-							<h3>librable attendu<br/>31 janvier 2023</h3>
+							<h3>librable attendu<br/>16 janvier 2024</h3>
 							<p class="fragment fade-up">6 articles (4 articles résumant un contenu + 1 article d'expérimentation + 1 article sur votre système de veille)</p>
 							<p class="fragment fade-up">1 page à propos</p>
 							<p class="fragment fade-up">Site généré avec Hugo, auto-déployé sur une Github Pages</p>
