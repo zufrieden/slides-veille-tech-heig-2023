@@ -3575,7 +3575,7 @@ jobs:
 				<section>
 					<section>
 						<h1>Welcome back<sup>4/5</sup></h1>
-						<h2>Bonne année !</h2>
+						<h2>Vive la neige 🌨️</h2>
 					</section>
 					<section>
 						<h2>Au menu 👨🏻‍🍳</h2>
@@ -3585,13 +3585,13 @@ jobs:
 								<strong class="step-name">Théorie</strong>
 							</li>
 							<li class="fragment fade-up">
-								<span class="step-icon">🌏</span>
-								<strong class="step-name">Déployer</strong>
-							</li>
-							<li class="fragment fade-up">
 								<span class="step-icon">✍️</span>
 								<strong class="step-name">Articles</strong>
 							</li>
+							<!-- <li class="fragment fade-up">
+								<span class="step-icon">🌏</span>
+								<strong class="step-name">Déployer</strong>
+							</li> -->
 						</ol>
 						<aside class="notes">
 							Nous allons voir la théorie de l'épreuve du temps et l'experimentation/exploitation de la veille !<br/>
@@ -3660,7 +3660,100 @@ jobs:
 							- Je veux aussi savoir pourquoi vous avez choisi celui-ci<br/>
 							- Peu de points sur la technique (Vous ne serez pas tous des développeurs, mais vous devez comprendre ce qui est en jeu).
 						</aside>
-					</section>		
+					</section>	
+					<section>
+						<style>							
+							.tree {
+							  /* margin: 18px; */
+							  padding: 0;
+							  font-size:70%;
+							}
+							.tree:not(:empty):before, .tree:not(:empty):after,
+							.tree ul:not(:empty):before, .tree ul:not(:empty):after,
+							.tree li:not(:empty):before, .tree li:not(:empty):after {
+							  display: block;
+							  position: absolute;
+							  content: "";
+							}
+							.tree ul, .tree li {
+							  position: relative;
+							  margin: 0;
+							  padding: 0;
+							}
+							.tree li {
+							  list-style: none;
+							}
+							.tree li > div {
+							  background-color: #ffffff55;
+							  /* color: #222; */
+							  padding: 5px;
+							  display: inline-block;
+							}
+							.tree.horizontal li {
+							  display: flex;
+							  align-items: center;
+							  margin-left: 24px;
+							}
+							.tree.horizontal li div {
+							  margin: 6px 0;
+							}
+							.tree.horizontal li:before {
+							  border-left: 1px solid #ddd;
+							  height: 100%;
+							  width: 0;
+							  top: 0;
+							  left: -12px;
+							}
+							.tree.horizontal li:first-child:before {
+							  height: 50%;
+							  top: 50%;
+							}
+							.tree.horizontal li:last-child:before {
+							  height: 50%;
+							  bottom: 50%;
+							  top: auto;
+							}
+							.tree.horizontal li:after, .tree.horizontal li ul:after {
+							  border-top: 1px solid #ddd;
+							  height: 0;
+							  width: 12px;
+							  top: 50%;
+							  left: -12px;
+							}
+							.tree.horizontal li:only-child:before {
+							  content: none;
+							}
+							.tree.horizontal li ul:after {
+							  left: 0;
+							}
+							.tree.horizontal > li:only-child {
+							  margin-left: 0;
+							}
+							.tree.horizontal > li:only-child:before, .tree.horizontal > li:only-child:after {
+							  content: none;
+							}
+							
+						</style>
+						<ul class="tree horizontal">
+							<li>
+								<div>Site Lab Veille Tech</div>	
+								<ul>
+									<li><div>Accueil</div></li>
+									<li><div>Articles</div>
+										<ul>
+											<li><div>Article 0 - Mon système de veille, mes abonnements, ma routine</div></li>
+											<li><div>Article 1</div></li>
+											<li><div>Article 2</div></li>
+											<li><div>Article 3</div></li>
+											<li><div>Article 4</div></li>
+											<li><div>Article 5 - Basé sur une expérimentation (cera traité au prochain cours)</div></li>
+										</ul>
+									</li>
+									<li><div>À propos (Ikigai, domaine, à propos de moi, comment j'ai fait ce site)</div></li>									
+								</ul>
+							</li>
+						</ul>
+					</section>
 				</section>									
 				<section>
 					<section>
@@ -3796,7 +3889,13 @@ document.body.appendChild(document.createElement('p'))
 							<p style="color:red;">@push - almanac web 2022 - https://almanac.httparchive.org/en/2022/javascript</p>
 						</aside>
 					</section>
-<section>
+					<section data-background-image="src/almanac_2023_third_party.png" data-background-size="contain">
+						<aside class="notes">
+							Vous avez déjà entendu parler de l'Almanac du web ?
+							<p style="color:red;">@push - almanac web 2022 - https://almanac.httparchive.org/en/2022/javascript</p>
+						</aside>
+					</section>					
+					<section>
 						<svg width="100%" height="auto" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<title>Courbe de la diffusion des innovations</title>
 							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -3898,10 +3997,6 @@ document.body.appendChild(document.createElement('p'))
 						<img src="src/hype_semantic_1.jpg"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
 						<img src="src/hype_semantic_2.jpg"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
 						<img src="src/hype_semantic_4.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
-						<img src="src/hype_blockchain_web3.jpg"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
-						<img src="src/hype_ai_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
-						<img src="src/hype_web3_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
-						<img src="src/hype_db_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
 						</div>
 						<aside class="notes">
 							Intéressant de regarder l'évolution face aux prédictions<br/>
@@ -3910,6 +4005,51 @@ document.body.appendChild(document.createElement('p'))
 						<p style="color:red;">@push – web3, Web2.0, non, le web n'a pas de version https://hidde.blog/the-web-doesnt-have-version-numbers/</p>
 						</aside>
 					</section>
+					
+					<section data-background-image="src/veille_2023_schema_event_5.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_4.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_3.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_1.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_2.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					<section data-background-image="src/veille_2023_schema_event_0.png" data-background-size="contain">					
+						<aside class="notes">
+							Schema.org
+						</aside>
+					</section>
+					
+					<section>
+						<div class="r-stack">	
+						<img src="src/hype_blockchain_web3.jpg" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_ai_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_web3_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						<img src="src/hype_db_2023.png"  class="fragment fade-up" style="box-shadow: 0px 0px 300px 0px #052a3f; border:50px solid white;"/>
+						</div>
+						<aside class="notes">
+							Web3 ?<br/>
+							Blockchain ?<br/>
+							AI ?<br/>
+						</aside>
+					</section>					
 					<section data-background-color="white" data-background-image="src/layer_of_the_web_1.png" data-background-size="contain">
 			
 						<aside class="notes">
